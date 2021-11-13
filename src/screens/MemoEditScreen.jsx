@@ -25,7 +25,7 @@ export default function MemoEditScreen(props) {
         updatedAt: new Date(),
       }, { merge: true })
         .then(() => {
-          navigation.goback();
+          navigation.goBack();
         })
         .catch((error) => {
           Alert.alert(error.code);
